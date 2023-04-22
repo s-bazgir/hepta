@@ -1,0 +1,542 @@
+*,
+*:before,
+*:after{
+    box-sizing:border-box;
+}
+.clearfix:after,
+.clearfix:before{
+    content: "";
+    display: table;
+    clear: both;
+}
+body{
+    direction:ltr;
+    margin:0;
+    padding:0;
+    font-family: 'Mukta Mahee Regular';
+}
+ul,li,ol{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+    transition: all 2s;
+}
+.overflow{
+    overflow:hidden;
+}
+h1 ,h2, h3, h4, h5{
+    text-transform: capitalize;
+    font-family:'Abril Fatface';
+}
+h1{
+    font-size:65px;
+}
+p{
+    text-transform:initial;
+}
+p::first-letter{
+    text-transform: capitalize;
+}
+.topcontainer{
+    width:1400px;
+    margin:0 auto;
+    color:#FFFFFF;
+}
+.container{
+    width:1140px;
+    margin:0 auto;
+}
+a:hover{
+    color: #6C757D;
+}
+.logo{
+    margin-top: 60px;
+    float: left;
+    transition: all 2s;
+}
+.logo:hover{
+    color: #6C757D;
+}
+.hamburgermenu{
+    margin-top: 60px;
+    float: right;
+    font-size: 30px;
+    transition: all 2s;
+}
+.hamburgermenu:hover{
+    color: #6C757D;
+    font-size: 50px;
+    background-color: #CFD4D6;
+    border-color: #6C757D;
+}
+.initial{
+    width:100%;
+    height:700px;
+    background-image: url("../images/hero_1.jpg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+} 
+.initial:before{
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    content:"";
+    position: absolute;
+    background: rgba(0,0,0,0.15);
+    pointer-events: none;
+    /*وقتی لایه روی دیو افتاده دکمه ها و لینک ها قابل کلیک نیست و این خط کد برای حل این مشکل اضافه میشود*/
+}
+.main{
+    text-align: center;
+    /* margin: 135px 0; */
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+}
+.top{   
+    position: absolute;
+    top:0;
+    left:0;
+    padding: 0 40px;
+    width: 100%; 
+    z-index: 3; 
+}
+.main h1{
+    margin-bottom: 10px;
+}
+.main p{   
+    font-size: 25px;
+    margin-top: 15px;
+    margin-bottom: 68px;
+}
+.colorlib{
+    text-decoration: underline;
+    color: #CFD4D6;
+    text-underline-offset: 10px;
+}
+.visitcolorlib{
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border:#FFFFFF solid 2px;
+    padding: 16px;
+    font-size:12px;
+    letter-spacing: 2px;
+}
+.hero{
+    margin:100px 0 140px 0;
+}
+.heroimage{
+    width:35%;
+    height:550px;
+    float:left;
+}
+.heroimage img{
+    width:100%;
+    height:100%; 
+    object-fit: cover;
+}
+.hero .cardbox{
+    float:left;
+    width:50%;
+    margin-top: 70px;
+}
+.cardbox{
+    padding:50px 50px 0 50px; 
+}
+.cardbox h2{
+    color:#000000;
+}
+.cardbox p{
+    line-height: 25px;
+    color:#6C757D;
+    margin-top: 8px;
+}
+.cardbox a{
+    color: #66C1BB;
+}
+.circle{
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    border: 1px solid #CFD4D6;
+    position: relative;
+    float: left;
+    padding-top: 5px;
+    padding-left: 3px;
+ }
+ .fa-play{
+    color: #66C1BB;
+ }
+ .play{
+   text-align: center;
+}
+.hero a{
+   text-transform: uppercase;
+   font-size:15px;
+   letter-spacing: 1px;
+   margin-left: 10px;
+   float: left;
+}
+.experience{
+   background:#FAFAFA;
+   border-top: solid #E0E0E0;
+   padding-bottom: 120px;
+}
+.experience .cardbox{
+   width:63%;
+   margin:0 auto;
+   text-align: center;
+   padding-top: 85px;
+}
+.experience h2{
+    margin-bottom: 10px;
+}
+.experiencefeatures .cardbox{
+    width:33%;
+    text-align: center;
+    float:left;
+}
+.cardbox img{
+    width:20%;
+    margin:0 auto;
+}
+.management{
+    text-align: center;
+}
+.management h1{
+    width:50%;
+    margin: 98 auto 30px auto;
+    line-height: 70px;
+}
+.management p{
+    line-height: 30px;
+    color:#6C757D;
+    width:65%;
+    margin: 0 auto; 
+    padding-bottom: 80px;
+    font-size: 20px;
+}
+.management img{
+    width:80%;    
+}
+.managementpicbox{
+    position: relative;
+}
+.dotcircle{
+    position: absolute;
+    bottom: 70px;
+    left:45%;
+    z-index: 2;
+}
+.dotcircle i{
+    font-size: 10px;
+    color: #FFFFFF;
+}
+.management i{
+    margin-top: 100px;
+    margin-left: 5px;
+}
+.blog{
+    background:#65C0BA;
+    text-align: center;
+    position: relative;
+    clip-path: polygon(0 23%, 100% 6%, 100% 100%, 0% 100%);  
+    margin-top: -350px; 
+    z-index: -1;
+}
+.blog h1{
+    margin-bottom: 25px;
+    margin-top: 400px;
+}
+.blog p{
+    color: #D2ECE9;
+    width:70%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    font-size: 20px;
+    line-height: 30px;
+}
+.post{
+    float: left;
+    background: #FFFFFF;
+    width:32%;
+    margin-right:1%;
+    margin-bottom: 110px;
+}
+.post img{
+    width:100%;
+    height:auto;
+    margin-bottom: 30px;
+}
+.post h2{
+    width:70%;
+    margin-left: 55px;
+    float: left;
+}
+.post p{
+    width:60%;
+    text-align: left;
+    color: #6C757D;
+    margin-bottom: 0px;
+}
+.post p.date{
+    margin-bottom: 10px;
+}
+.post h2{
+    margin-top: 0;
+}
+.customer{
+    background: #FAFAFA;
+    padding: 50px 0;
+}
+.customer h1{
+    text-align: center;
+    margin-top: 50px;
+}
+.customerbox{
+    float:left;
+    width:30%;
+    margin: 0 10px;
+    font-style: italic;
+    line-height: 18px;
+    margin-bottom: 80px;
+}
+.customerbox img{
+    width:60px;
+    height:auto;
+    border-radius: 50%;
+}
+.quat::before{
+    content:"";
+}
+.quat::after{
+    content:"";
+}
+.destination{
+    text-align: center;
+}
+.destination p{
+    color:#6C757D;
+    width:50%;
+    margin:0 auto 20px;
+}
+.destinationpart{
+    width:25%;
+    float:left;
+    padding: 0 10px;
+    margin-bottom: 100px;
+}
+.destinationpart img{
+    width:100%;
+    height: auto;
+}
+.viewnumber{
+    float: right;
+}
+.viewnumber{
+    float:right;
+    color: #CFD4D6 ;
+    font-style: italic;
+}
+.star li,
+.dotcircle li,
+.brands li{
+    float: left;
+}
+.star 
+{
+    float: left;
+    margin-top: 0;
+    margin-bottom: 0;    
+}
+.brands{
+    display:inline-block;    
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.star i{
+    color: #65C0BA;
+}
+.brands li{
+    font-size: 20px;
+    margin-left: 15px;
+}
+.footer{
+    background-color: #000000;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-transform: capitalize;
+}
+.footer li{
+    padding: 10px 10px;
+    color: #CFD4D6 ;
+}
+.footerheadings{
+    font-weight: bold;
+    color: #FFFFFF;
+    font-weight: bolder;
+}
+.submenu{
+    float: left;
+    width:25%;
+}
+.contactfields{
+    font-style: italic;
+    color: #FFFFFF;
+    margin-top: 3px;
+}
+.copyright{
+    color: #CFD4D6;
+    background-color: #000000;
+    text-align: center;    
+}
+.copyright .container{
+    border-top: solid #CFD4D6;
+    padding-top: 30px;
+}
+.fa-telegram{
+    font-size: 20px;
+    margin-left: 50px;
+    color: #FFFFFF;
+    background: #000000;
+}
+@media screen and (max-width:1400px) {
+    .topcontainer{
+        width: 100%;
+    }
+    .logo{
+        margin-left: 30px;
+    }
+    .hamburgermenu{
+        margin-right: 30px;
+    }
+}
+@media screen and (max-width:1160px) {
+    .container{
+        width:100%;
+    }
+    .hero{
+        margin:40px 0 40px 0;
+    }
+    .heroimage,
+    .hero .cardbox{
+        float:none;        
+        text-align: center;
+        margin-top: 20px;
+    }
+    .heroimage{
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .hero .cardbox{
+        width:100%;
+    }
+    .experience .cardbox{
+        width: 100%;
+    }
+    .play{
+        float:none;  
+        text-align: center;
+        width:50%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .experiencefeatures .cardbox{
+        width:40%;
+    }
+    .blog{
+        clip-path: polygon(0 10%, 100% 6%, 100% 100%, 0% 100%);  
+        /*به ترتیب گوشه چپ بالا - راست بالا - راست پایین - چپ پایین*/
+        margin-top: -350px; 
+    }
+    .blog .post{
+        float:none;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 50;
+    }
+    .blog .post h2 ,
+    .blog .post p{
+        float: none;
+    }
+    .destination  .destinationpart{        
+        width: 40%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+@media screen and (max-width:900px) {    
+    .experiencefeatures .cardbox{
+        width:100%;
+        text-align: center;
+    }
+    .customer  .customerbox{
+        width: 50%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .customer .clearfix :last-child{
+        float: none;
+        width:80%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .destination  .destinationpart{
+        width: 50%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer .submenu{
+        width: 33%;    
+    }
+}
+@media screen and (max-width:800px) {
+    .customer  .customerbox{
+        float:none;
+        width: 80%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer .submenu{
+        float: left;
+        width:50%;
+    }  
+}
+@media screen and (max-width:560px) { 
+    .management h1{
+        font-size: 50px;
+        text-align: center;
+    }
+    .destination  .destinationpart{
+        float:none;
+        width: 80%;
+        text-align: center;
+    }
+    .footer .submenu{
+        float:none;
+        width:100%;
+    }
+    .copyright p{
+        width:60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (max-width:560px) { 
+    .management h1{
+        font-size: 40px;
+        text-align: center;
+    }
+}
